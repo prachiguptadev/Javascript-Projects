@@ -5,8 +5,16 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: #b9b4c7;
+  height: 100%;
+  width: 100%;
+  font-family: "Permanent Marker", cursive;
+}
+.overly {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .item {
@@ -26,6 +34,13 @@ body {
   border: 2px solid #212121;
   margin-right: 15px;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+span {
+  padding-top: 4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 
 h1 {
@@ -40,7 +55,7 @@ h2 {
 
 h1,
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
   color: #212121;
 }
 
@@ -52,17 +67,22 @@ h2 {
   background-color: #f2afef;
 }
 
-#yellow {
-  background-color: #ffdd95;
+#brown {
+  background-color: #2f2b22;
 }
 
-#green {
-  background-color: #a6ff96;
+#orange {
+  background-color: #e46e19;
+  color: #212121;
+}
+#orange:hover {
+  background-color: #d06315b8;
 }
 
 #purple:hover,
 #pink:hover,
-#yellow:hover,
-#green:hover {
+#brown:hover,
+#orange:hover {
   box-shadow: 10px 10px 5px #373737;
+  transform: scale(1.1, 1.1);
 }
